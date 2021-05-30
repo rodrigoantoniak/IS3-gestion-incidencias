@@ -1,4 +1,5 @@
 def factorial(x):
-    n = 1
-    for i in range(1, x + 1):
-        n *= i
+    if x > 1:
+        return factorial(x - 1) * x
+    else:
+        return 1
